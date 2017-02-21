@@ -38,7 +38,7 @@ public class SecurityTestApplication {
 	public class SessionConfig {
 		@Bean
 		public JedisConnectionFactory connectionFactory() {
-			String redisHost = "192.168.99.100", redisPort = "6379";
+			String redisHost = "redis", redisPort = "6379";
 
 			JedisConnectionFactory factory = new JedisConnectionFactory();
 			//if either of these are null, the app will just fail to startup -- which is actually what we want
